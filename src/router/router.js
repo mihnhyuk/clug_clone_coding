@@ -26,6 +26,7 @@ router.get('/:address/:id', (req, res) => {
 router.get('/:address/:id/comment', (req, res) => {
 	fs.readFile("./data/comment.json", "utf8", (err, data) => {
 		if (err) {
+			
 			console.log("File read failed:", err);
 			res.send("error");
 			return;
@@ -62,11 +63,27 @@ router.post('/:address/:id/comment', (req, res) => {
 })
 
 router.get('/:address/:postID/comment/like/:comID', (req, res) => {
+	fs.readFile("./data/comment.json", "utf8", (err, data) => {
+		if (err) {
+			
+			console.log("File read failed:", err);
+			res.send("error");
+			return;
+		}
+		var ret = JSON.parse(data);
+		var com = ret.data.find(comm => comm["comment-id"] === req.params.comID);
+		com["like-num"]++ ;
+		console.log(ret);
+		var json = JSON.stringify(ret); //convert it back to json
+		fs.writeFile('./data/comment.json', json, 'utf8', (err) => {
+			if (err){
+				console.log("write error");
+			}
+		});
+
+	})
 	res.send("comment like button");
 })
 
-router.get('/:address/:id/comment/like/list', (req, res) => {
-	res.send("comment like list");
-})
 
 module.exports = router;
