@@ -1,6 +1,9 @@
 var fs = require('fs');
+var qs = require('querystring')
+var append = require('./appendComment')
+var time = require('./getTime')
 
-var postComment = (req, res) => {
+var postComment = (request, response) => {
     var body = ''
 	request.on('data', function (data) {
 		body += data;
@@ -17,7 +20,7 @@ var postComment = (req, res) => {
 			"user-id" : user,
 			"icon" : "img",
 			"content" : content,
-			"date" : time(),
+			"date" : time,
 			"reply-num" : 0,
 			"reply" : ""
 		}

@@ -8,7 +8,9 @@
 			"content": "디자인 잘 하고 싶다",
 			"date": "2020.8.26. 19:05",
 			"reply-num": 1,
-			"reply": "10",
+			"reply": [
+				"10"
+			],
 			"like-num": 0,
 			"comment-ID": 1
 		},
@@ -20,8 +22,17 @@
 			"content": "디자인 잘 하고 싶다",
 			"date": "2020.8.26. 19:05",
 			"reply-num": 0,
-			"reply": "",
+			"reply": [
+				"3",
+				"4"
+			],
 			"like-num": 1
+		},
+		{
+			"icon": "img",
+			"date": "2022.8.19. 15:59",
+			"reply-num": 0,
+			"reply": ""
 		}
 	]
 }

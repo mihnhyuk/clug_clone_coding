@@ -1,3 +1,4 @@
+const { response } = require('express');
 var fs = require('fs');
 
 var appendComment = (toAdd) =>{
@@ -7,12 +8,14 @@ var appendComment = (toAdd) =>{
 		}
 		else {
 		var obj = JSON.parse(data); //now it an object
-		obj.table.push(toAdd);  //add some data
+		obj.data.push(toAdd);  //add some data
 		var json = JSON.stringify(obj); //convert it back to json
 		fs.writeFile('./data/comment.json', json, 'utf8', (err) => {
 			if (err){
 				console.log("write error");
 			}
-		});
+		})
 	}});
 }
+
+module.exports = appendComment
