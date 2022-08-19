@@ -2,25 +2,29 @@
 	"data": [
 		{
 			"comment-id": "1",
-			"user-id": "채채",
+			"user-id": "1",
 			"user-home": "url-to-user-blog",
 			"icon": "img",
 			"content": "디자인 잘 하고 싶다",
-			"date": "2020.8.26. 19:05",
+			"date": "2020.8.26. 19:5",
 			"reply-num": 1,
-			"reply": "10",
-			"like-num": 0,
-			"comment-ID": 1
+			"reply": [
+				"10"
+			],
+			"like-num": 0
 		},
 		{
 			"comment-id": "2",
-			"user-id": "채채",
+			"user-id": "2",
 			"user-home": "url-to-user-blog",
 			"icon": "img",
 			"content": "디자인 잘 하고 싶다",
-			"date": "2020.8.26. 19:05",
+			"date": "2020.8.26. 19:5",
 			"reply-num": 0,
-			"reply": "",
+			"reply": [
+				"3",
+				"4"
+			],
 			"like-num": 1
 		}
 	]
