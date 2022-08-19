@@ -1,13 +1,16 @@
 var fs = require('fs');
 
-var getComment = (callback) =>{
-	fs.readFile('./data/comment.json', 'utf8', (err, data) => {
+var getComment = (req,res) =>{
+	fs.readFile("./data/comment.json", "utf8", (err, data) => {
 		if (err) {
 			console.log("File read failed:", err);
-			return ;
-		}
-		return JSON.parse(data);
-	});
+			res.send("error");
+			return;
+		  }
+		var ret = JSON.parse(data);
+
+		res.status(200).json(ret)
+	})
 }
 
 module.exports = getComment;
