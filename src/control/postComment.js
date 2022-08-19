@@ -1,8 +1,8 @@
 var fs = require('fs');
-var bodyParser = require('body-parser');
-var qs = require('querystring');
-var append = require('../control/appendComment');
-var time = require('../control/getTime');
+var qs = require('querystring')
+var append = require('./appendComment')
+var time = require('./getTime')
+
 var postComment = (request, response) => {
     var body = ''
 	request.on('data', function (data) {
@@ -20,7 +20,7 @@ var postComment = (request, response) => {
 			"user-id" : user,
 			"icon" : "img",
 			"content" : content,
-			"date" : time(),
+			"date" : time,
 			"reply-num" : 0,
 			"reply" : ""
 		}
