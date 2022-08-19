@@ -26,7 +26,6 @@ router.get('/:address/:id', (req, res) => {
 router.get('/:address/:id/comment', (req, res) => {
 	fs.readFile("./data/comment.json", "utf8", (err, data) => {
 		if (err) {
-			
 			console.log("File read failed:", err);
 			res.send("error");
 			return;
