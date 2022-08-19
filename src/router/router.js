@@ -8,7 +8,7 @@ var getUser = require('../control/getUser');
 var getPost = require('../control/getPost');
 var getComment = require('../control/getComment');
 var postComment = require('../control/postComment');
-var commentLike = require('../control/commentLike');
+const commentLike = require('../control/commentLike');
 
 var router = express.Router();
 

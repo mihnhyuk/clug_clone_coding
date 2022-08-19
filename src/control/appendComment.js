@@ -16,3 +16,5 @@ var appendComment = (toAdd) =>{
 		});
 	}});
 }
+
+module.exports = appendComment;

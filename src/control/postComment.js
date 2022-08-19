@@ -1,6 +1,9 @@
 var fs = require('fs');
-
-var postComment = (req, res) => {
+var bodyParser = require('body-parser');
+var qs = require('querystring');
+var append = require('../control/appendComment');
+var time = require('../control/getTime');
+var postComment = (request, response) => {
     var body = ''
 	request.on('data', function (data) {
 		body += data;
