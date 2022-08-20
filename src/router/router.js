@@ -8,8 +8,8 @@ const commentLike = require('../control/commentLike');
 var router = express.Router();
 
 router.get('/:address', getUser)
-router.get('/:address/:id', getPost)
-router.get('/:address/:id/comment', getComment)
+router.get('/:address/post/', getPost)
+router.get('/:address/post/{postID}/comment', getComment)
 router.post('/:address/:id/comment', postComment)
 router.get('/:address/:postID/comment/like/:comID', commentLike)
 
