@@ -1,10 +1,9 @@
 var express = require('express');
 const router = express.Router({ mergeParams: true }); 
-var getComment = require('../controller/getComment');
-var postComment = require('../controller/postComment');
-var commentLike= require('../controller/commentLike');
+var cont = require('../controller/index')
 
-router.get('/', getComment);
-router.post('/',postComment);
-router.post('/like/{comment-id}', commentLike);
+router.get('/', cont.getComment);
+router.post('/',cont.postComment);
+router.get('/like/{comment-id}', cont.commentLike);
+
 module.exports = router;
