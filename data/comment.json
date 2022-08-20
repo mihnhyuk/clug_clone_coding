@@ -2,6 +2,8 @@
 	"data": [
 		{
 			"comment-id": "1",
+			"blogName": "blogpeople",
+			"postID" : "1",
 			"user-id": "1",
 			"user-home": "url-to-user-blog",
 			"icon": "img",
@@ -11,10 +13,12 @@
 			"reply": [
 				"10"
 			],
-			"like-num": 0
+			"like-num": 1
 		},
 		{
 			"comment-id": "2",
+			"blogName": "blogpeople",
+			"postID" : "1",
 			"user-id": "2",
 			"user-home": "url-to-user-blog",
 			"icon": "img",
@@ -25,7 +29,7 @@
 				"3",
 				"4"
 			],
-			"like-num": 1
+			"like-num": 4
 		}
 	]
 }
