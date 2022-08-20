@@ -1,8 +1,8 @@
 var express = require('express');
 const router = express.Router({ mergeParams: true }); 
-var getComment = require('../commment/controller/getComment');
-var postComment = require('../commment/controller/postComment');
-var commentLike= require('../commment/controller/commentLike');
+var getComment = require('../controller/getComment');
+var postComment = require('../controller/postComment');
+var commentLike= require('../controller/commentLike');
 
 router.get('/', getComment);
 router.post('/',postComment);
