@@ -9,7 +9,7 @@ var postComment = (request, response) => {
 	var user = body.user;
 	var content = body.content;
 	var ret = {
-		"comment-id" : "",
+		"comment-id" : (Math.floor(Math.random() * 100)).toString(10),
 		"user-id" : user,
 		"icon" : "img",
 		"content" : content,
