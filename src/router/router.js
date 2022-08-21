@@ -1,17 +1,11 @@
 var express = require('express');
-var getUser = require('../control/getUser');
-var getPost = require('../control/getPost');
-var getComment = require('../control/getComment');
-var postComment = require('../control/postComment');
-var commentLike = require('../control/commentLike');
+var router = express.Router({mergeParams : true});
+var userRouter = require("../user/router/router");
+var postRouter = require("../post/router/router");
+var commentRouter = require("../comment/router/router");
 
-var router = express.Router();
-
-router.get('/:address', getUser)
-router.get('/:address/:id', getPost)
-router.get('/:address/:id/comment', getComment)
-router.post('/:address/:id/comment', postComment)
-router.get('/:address/:postID/comment/like/:comID', commentLike)
-
+router.use('/:address', userRouter);
+router.use('/:address/post/', postRouter);
+router.use('/:address/post/{postID}/comment', commentRouter);
 
 module.exports = router;
