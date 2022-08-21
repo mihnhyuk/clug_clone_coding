@@ -1,5 +1,5 @@
 var qs = require('querystring')
-var append = require('./appendComment')
+var append = require('../sevice/appendComment')
 var time = require('../sevice/getTime')
 
 var postComment = (request, response) => {

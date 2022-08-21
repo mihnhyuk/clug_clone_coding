@@ -1,4 +1,4 @@
-var appendComment = require('..sevice/appendComment');
+var appendComment = require('../sevice/appendComment');
 var commentLike = require('./commentLike');
 var getComment = require('./getComment');
 var getTime = require('../sevice/getTime');
