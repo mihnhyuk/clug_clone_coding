@@ -9,15 +9,15 @@ var commentLike = (req, res) => {
 			return;
 		}
 		var ret = JSON.parse(data);
-		var com = ret.data.find(comm => comm["comment-id"] === req.params.comID);
-		com["like-num"]++ ;
+		var com = ret.data.find(comm => comm["commentId"] === req.params.commentID);
+		com["likeNum"]++;
 		console.log(ret);
 		var json = JSON.stringify(ret); //convert it back to json
 		fs.writeFile('./data/comment.json', json, 'utf8', (err) => {
 			if (err){
 				console.log("write error");
 			}
-			res.status(200);
+			res.status(200).json(ret);
 		});
 	})	
 }

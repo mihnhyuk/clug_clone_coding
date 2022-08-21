@@ -7,16 +7,16 @@ var postComment = (request, response) => {
 	var user = body.user;
 	var content = body.content;
 	var ret = {
-		"comment-id" : (Math.floor(Math.random() * 100)).toString(10),
+		"commentId" : (Math.floor(Math.random() * 100)).toString(10),
 		"blogName" : request.params.address,
 		"postID" : request.params.postID,
-		"user-id" : user,
+		"userId" : user,
 		"icon" : "img",
 		"content" : content,
 		"date" : time,
-		"reply-num" : 0,
+		"replyNum" : 0,
 		"reply" : [],
-		"like-num" : 0
+		"likeNum" : 0
 	}
 	append(ret)
 	response.status(200).json(ret)

@@ -2,8 +2,9 @@
 
 네이버 블로그 클론 코딩
 
-![image.jpg1](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/Untitled.png) |![image.jpg2](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/Untitled%201.png)
---- | --- | 
+![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/Untitled.png)
+
+![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/Untitled%201.png)
 
 # 1. 데이터 정의
 
@@ -40,43 +41,42 @@
     
     ```json
     {
-    	"blogpeople" : {
-    		"1" : {
-    		"postTitle" : "[#지금여기 챌린지] 나의 '올여름 핫플'을 모먼트로 만들어주세요!",
-    		"postContents" : "안녕하세요",
-    		"date": "2022.8.9.",
-    		"likes": 3470,
-    		"comments": 440,
-    		"thumbnail": "img"
-    		},
-    		"2" : {
-    			"postTitle" : "아무말",
-    			"postContents" : "안녕안녕하세요",
-    			"date": "2022.8.10.",
-    			"likes": 347,
-    			"comments": 44,
-    			"thumbnail": "img"
-    		}
-    		
-    	},
-    	"blogpeople2" : [{
-    		"id": "2",
-    		"postTitle" : "[#지금여기 챌린지] 나의 '올겨울 핫플'을 모먼트로 만들어주세요!",
-    		"postContents" : "안녕하세요",
-    		"date": "2022.8.9.",
-    		"likes": 3470,
-    		"comments": 440,
-    		"thumbnail": "img"
-    	}],
-    	"blogpeople3" : [{
-    		"id": "3",
-    		"post-title" : "[#지금여기 챌린지] 나의 '올가을 핫플'을 모먼트로 만들어주세요!",
-    		"post-contents" : "안녕하세요",
-    		"date": "2022.8.9.",
-    		"likes": 3470,
-    		"comments": 440,
-    		"thumbnail": "img"
-    	}]
+      "blogpeople": {
+        "1": {
+          "postTitle": "[#지금여기 챌린지] 나의 '올여름 핫플'을 모먼트로 만들어주세요!",
+          "postContents": "안녕하세요",
+          "date": "2022.8.9.",
+          "likes": 3479,
+          "comments": 440,
+          "thumbnail": "img"
+        },
+        "2": {
+          "postTitle": "[EVENT] 여름휴가 알차게! 블로그 마켓 #바캉스템 기획전",
+          "postContents": "모두 여름휴가 계획은 세우셨나요? 올 여름 휴가는 어디로 가실 계획이실지 너무 궁금한데요.",
+          "date": "2022.7.18.",
+          "likes": 2617,
+          "comments": 180,
+          "thumbnail": "img"
+        }
+      },
+      "blogpeople2": {
+        "1": {
+          "postTitle": "9월, 이달의 블로그를 추천해 주세요!",
+          "postContents": "2022년 9월의 주제는 스포츠, 어학·외국어 공연·전시, 인테리어·DIY 원예·재배, 드라마 입니다",
+          "date": "2022.8.18.",
+          "likes": 1798,
+          "comments": 21,
+          "thumbnail": "img"
+        },
+        "2": {
+          "postTitle": "8월, 이달의 블로그를 소개합니다!",
+          "postContents": "안녕하세요, 네이버 블로그팀입니다. ",
+          "date": "2022.8.3.",
+          "likes": 3362,
+          "comments": 397,
+          "thumbnail": "img"
+        }
+      }
     }
     ```
     
@@ -88,52 +88,119 @@
     
     ```json
     {
-    	"data": [
-    		{
-    			"comment-id": "1",
-    			"blogName": "blogpeople",
-    			"postID" : "1",
-    			"user-id": "1",
-    			"user-home": "url-to-user-blog",
-    			"icon": "img",
-    			"content": "디자인 잘 하고 싶다",
-    			"date": "2020.8.26. 19:5",
-    			"reply-num": 1,
-    			"reply": [
-    				"10"
-    			],
-    			"like-num": 1
-    		},
-    		{
-    			"comment-id": "2",
-    			"blogName": "blogpeople",
-    			"postID" : "1",
-    			"user-id": "2",
-    			"user-home": "url-to-user-blog",
-    			"icon": "img",
-    			"content": "디자인 잘 하고 싶다",
-    			"date": "2020.8.26. 19:5",
-    			"reply-num": 0,
-    			"reply": [
-    				"3",
-    				"4"
-    			],
-    			"like-num": 4
-    		}
-    	]
+      "data": [
+        {
+          "commentId": "1",
+          "userId": "1",
+          "userHome": "url-to-user-blog",
+          "icon": "img",
+          "content": "디자인 잘 하고 싶다",
+          "date": "2020.8.26. 19:5",
+          "replyNum": 1,
+          "reply": ["10"],
+          "likeNum": 27
+        },
+        {
+          "commentId": "2",
+          "userId": "2",
+          "userHome": "url-to-user-blog",
+          "icon": "img",
+          "content": "기대가 됩니다!",
+          "date": "2020.8.29. 18:21",
+          "replyNum": 2,
+          "reply": ["3", "4"],
+          "likeNum": 48
+        }
+      ]
     }
     ```
     
 
 # 2. API 설계
 
-| url | method | description |
-| --- | --- | --- |
-| /{blog-address} | GET | user 이름, 이웃 숫자, 대문사진  /   게시글 목록 JSON |
-| /{blog-address}/post/{post-id} | GET | 게시글 JSON |
-| /{blog-address}/post/{post-id}/like | GET | 게시글 좋아요 |
-| /{blog-address}/post/{post-id}/comments | GET | 댓글 가져오기 |
-| /{blog-address}/post/{post-id}/comments | POST | 댓글 등록 |
-| /{blog-address}/post/{post-id}/comment//like/{comment-id} | GET | 댓글에 좋아요 |
+| url | method | description |  |
+| --- | --- | --- | --- |
+| /{blog-address} | GET | user 이름, 이웃 숫자, 대문사진  /   게시글 목록 JSON |  |
+| /{blog-address}/post/{post-id} | GET | 게시글 JSON |  |
+| /{blog-address}/post/{post-id}/like | GET | 게시글 좋아요 |  |
+| /{blog-address}/post/{post-id}/comment | GET | 댓글 가져오기 |  |
+| /{blog-address}/post/{post-id}/comment | POST | 댓글 등록 |  |
+| /{blog-address}/post/{post-id}/comment/like/{comment-id} | GET | 댓글에 좋아요 |  |
 
-api는 최소한의 기능들만 구현했습니다.
+api는 최소한의 기능들만 구현했습니다. 
+
+# 3. 실행화면
+
+: 각각의 blog-address와 post-id에 해당하는 더 많은 경우의 실행화면은 아래 참조
+
+ - clone_coding_캡쳐화면 파일
+
+[clug_clone_coding/post.json at dev-causyj · mihnhyuk/clug_clone_coding](https://github.com/mihnhyuk/clug_clone_coding/blob/dev-causyj/data/post.json)
+
+- /{blog-address} : user 이름, 이웃 숫자, 대문사진  /   게시글 목록 JSON
+    
+    ![blogpeople.png](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/blogpeople.png)
+    
+    : 기본 화면. ‘blopeople’의 블로그 게시글 2가지의 목록을 보여줍니다.  
+    
+- /{blog-address}/post/{post-id} / 게시글 JSON
+    
+    ![blogpeople_post_1.png](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/blogpeople_post_1.png)
+    
+     : 원하는 블로그 유저의 게시물 하나를 보여줍니다. → “blogpeopl”의 “1”번 게시물  
+    
+- /{blog-address}/post/{post-id}/like / 게시글 좋아요
+    
+    ![blogpeople_post_1_like.png](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/blogpeople_post_1_like.png)
+    
+    : 게시물의 “likes”항목에서 게시글의 좋아요를 확인할 수 있습니다.
+    
+- /{blog-address}/post/{post-id}/comment / 댓글 가져오기
+    
+    ![blogpeople_post_1_comment.png](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/blogpeople_post_1_comment.png)
+    
+- /{blog-address}/post/{post-id}/comment / 댓글 등록
+    
+    : postman프로그램을 이요해 post방식으로 댓글등록
+    
+    ```
+    // INPUT
+    {
+        "commentId": "5",
+          "userId": "5",
+          "userHome": "url-to-user-blog",
+          "icon": "img",
+          "content": "goodjob",
+          "date": "2020.10.31. 15:21",
+          "replyNum": 2,
+          "reply": ["3", "4"],
+          "likeNum": 21
+    }
+    ```
+    
+    ![5_goodjob.png](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/5_goodjob.png)
+    
+- /{blog-address}/post/{post-id}/comment/like/{comment-id} /댓글에 좋아요
+    
+    : url에 원하는 게시물에 대한 정보를 입력하고 새로고침을 하면 “likeNum”의 숫자가 올라가는 것을 확인할 수 있습니다. 
+    
+    ![blogpeople_post_1_comment_like_1.png](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/blogpeople_post_1_comment_like_1.png)
+    
+
+# 4. 어필하고 싶은 점
+
+- 1. github로 협업
+    
+    [GitHub - mihnhyuk/clug_clone_coding: 클러그 클론 코딩 대회](https://github.com/mihnhyuk/clug_clone_coding.git)
+    
+    ![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/Untitled%202.png)
+    
+    ![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/Untitled%203.png)
+    
+    github로 clug_clone_coding이라는 중앙저장소를 만들어 효율적으로 협업을 하였습니다. main 브랜치외에 3개의 브랜치를 더 만들어 각자한 작업을 각자 브랜치에 올려 이상이 없는지 확인 후 dev브랜치(메인 브랜치)에 병합하였습니다. 
+    
+- 2.
+    
+    ![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/Untitled%204.png)
+    
+    ![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/Untitled%205.png)

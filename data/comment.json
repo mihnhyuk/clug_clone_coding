@@ -1,26 +1,26 @@
 {
   "data": [
     {
-      "comment-id": "1",
-      "user-id": "1",
-      "user-home": "url-to-user-blog",
+      "commentId": "1",
+      "userId": "1",
+      "userHome": "url-to-user-blog",
       "icon": "img",
       "content": "디자인 잘 하고 싶다",
       "date": "2020.8.26. 19:5",
-      "reply-num": 1,
+      "replyNum": 1,
       "reply": ["10"],
-      "like-num": 1
+      "likeNum": 27
     },
     {
-      "comment-id": "2",
-      "user-id": "2",
-      "user-home": "url-to-user-blog",
+      "commentId": "2",
+      "userId": "2",
+      "userHome": "url-to-user-blog",
       "icon": "img",
-      "content": "디자인 잘 하고 싶다",
-      "date": "2020.8.26. 19:5",
-      "reply-num": 0,
+      "content": "기대가 됩니다!",
+      "date": "2020.8.29. 18:21",
+      "replyNum": 2,
       "reply": ["3", "4"],
-      "like-num": 4
+      "likeNum": 48
     }
   ]
 }
