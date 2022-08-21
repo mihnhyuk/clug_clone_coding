@@ -1,10 +1,10 @@
 var express = require('express');
-var router = express.Router({ mergeParams: true }); 
-var cont = require('../controller/index');
+const router = express.Router({ mergeParams: true }); 
+var getUser = require('../controller/getPost');
+var getLike = require('../controller/getLike');
 
-
-router.get('/:postID', cont.getPost)
-// router.get('/:postID/like',)
+router.get('/:postID', getUser);
+router.get('/:postID/like', getLike);
 
 
 module.exports = router;
