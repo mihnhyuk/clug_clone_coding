@@ -5,7 +5,7 @@ var postRouter = require("../post/router/router");
 var commentRouter = require("../comment/router/router");
 
 router.use('/:address', userRouter);
-router.use('/:address/post/', postRouter);
-router.use('/:address/post/{postID}/comment', commentRouter);
+router.use('/:address/posts/', postRouter);
+router.use('/:address/posts/{postID}/comment', commentRouter);
 
 module.exports = router;
