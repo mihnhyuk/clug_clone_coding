@@ -1,6 +1,6 @@
 var qs = require('querystring')
-var append = require('./appendComment')
-var time = require('../sevice/getTime')
+var append = require('../service/appendComment')
+var time = require('../service/getTime')
 
 var postComment = (request, response) => {
     var body = request.body
