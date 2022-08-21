@@ -1,11 +1,10 @@
 # 클러그 클론 코딩
 
 네이버 블로그 클론 코딩
+
 ![Untitled](https://user-images.githubusercontent.com/81398185/185791488-55189753-8be6-4edd-b8ef-595ccac48760.png)
+![Untitled 1](https://user-images.githubusercontent.com/81398185/185791525-be7ec7d4-985b-4288-b93b-bfe74effad7a.png)
 
-![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/Untitled.png)
-
-![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%20b5a8293429ad4b6a963e64d767c522d0/Untitled%201.png)
 
 # 1. 데이터 정의
 
