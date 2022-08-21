@@ -4,6 +4,6 @@ var cont = require('../controller/index')
 
 router.get('/', cont.getComment);
 router.post('/',cont.postComment);
-router.get('/like/{comment-id}', cont.commentLike);
+router.get('/like/:commentID', cont.commentLike);
 
 module.exports = router;
