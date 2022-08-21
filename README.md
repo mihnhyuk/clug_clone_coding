@@ -123,9 +123,9 @@
 | /{blog-address} | GET | user 이름, 이웃 숫자, 대문사진  /   게시글 목록 JSON |  |
 | /{blog-address}/posts/{post-id} | GET | 게시글 JSON |  |
 | /{blog-address}/posts/{post-id}/like | GET | 게시글 좋아요 |  |
-| /{blog-address}/posts/{post-id}/comment | GET | 댓글 가져오기 |  |
-| /{blog-address}/posts/{post-id}/comment | POST | 댓글 등록 |  |
-| /{blog-address}/posts/{post-id}/comment/like/{comment-id} | GET | 댓글에 좋아요 |  |
+| /{blog-address}/posts/{post-id}/comments | GET | 댓글 가져오기 |  |
+| /{blog-address}/posts/{post-id}/comments | POST | 댓글 등록 |  |
+| /{blog-address}/posts/{post-id}/comments/like/{comment-id} | GET | 댓글에 좋아요 |  |
 
 api는 최소한의 기능들만 구현했습니다. 
 
