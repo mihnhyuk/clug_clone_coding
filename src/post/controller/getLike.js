@@ -7,8 +7,8 @@ var getLike = (req, res) => {
 			res.send("error");
 			return;
 		}
-    
-		var ret = JSON.parse(data);
+        var params = req.params;
+		var ret = JSON.parse(data)
 		ret[req.params.address][req.params.postID]["likes"]++ ;
         console.log(ret);
 		var json = JSON.stringify(ret); //convert it back to json
@@ -21,4 +21,3 @@ var getLike = (req, res) => {
 	})	
 }
 module.exports = getLike;
-
