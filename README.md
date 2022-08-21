@@ -2,7 +2,7 @@
 
 네이버 블로그 클론 코딩
 
-![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/Untitled.png) |![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/Untitled%201.png) 
+![Untitled](./%08readme/Untitled.png) |![Untitled](./%08readme/Untitled%201.png) 
 --- | --- |
 
 
@@ -139,25 +139,25 @@ api는 최소한의 기능들만 구현했습니다.
 
 - /{blog-address} : user 이름, 이웃 숫자, 대문사진  /   게시글 목록 JSON
     
-    ![blogpeople.png](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/blogpeople.png)
+    ![blogpeople.png](/%08readme/blogpeople.png)
     
     : 기본 화면. ‘blopeople’의 블로그 게시글 2가지의 목록을 보여줍니다.  
     
 - /{blog-address}/post/{post-id} / 게시글 JSON
     
-    ![blogpeople_post_1.png](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/blogpeople_post_1.png)
+    ![blogpeople_post_1.png](/%08readme/blogpeople_post_1.png)
     
      : 원하는 블로그 유저의 게시물 하나를 보여줍니다. → “blogpeopl”의 “1”번 게시물  
     
 - /{blog-address}/post/{post-id}/like / 게시글 좋아요
     
-    ![blogpeople_post_1_like.png](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/blogpeople_post_1_like.png)
+    ![blogpeople_post_1_like.png](/%08readme/blogpeople_post_1_like.png)
     
     : 게시물의 “likes”항목에서 게시글의 좋아요를 확인할 수 있습니다.
     
 - /{blog-address}/post/{post-id}/comment / 댓글 가져오기
     
-    ![blogpeople_post_1_comment.png](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/blogpeople_post_1_comment.png)
+    ![blogpeople_post_1_comment.png](/%08readme/blogpeople_post_1_comment.png)
     
 - /{blog-address}/post/{post-id}/comment / 댓글 등록
     
@@ -178,13 +178,13 @@ api는 최소한의 기능들만 구현했습니다.
     }
     ```
     
-    ![5_goodjob.png](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/5_goodjob.png)
+    ![5_goodjob.png](/%08readme/5_goodjob.png)
     
 - /{blog-address}/post/{post-id}/comment/like/{comment-id} /댓글에 좋아요
     
     : url에 원하는 게시물에 대한 정보를 입력하고 새로고침을 하면 “likeNum”의 숫자가 올라가는 것을 확인할 수 있습니다. 
     
-    ![blogpeople_post_1_comment_like_1.png](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/blogpeople_post_1_comment_like_1.png)
+    ![blogpeople_post_1_comment_like_1.png](/%08readme/blogpeople_post_1_comment_like_1.png)
     
 
 # 4. 프로젝트에서 집중한 부분
@@ -193,9 +193,9 @@ api는 최소한의 기능들만 구현했습니다.
     
     [GitHub - mihnhyuk/clug_clone_coding: 클러그 클론 코딩 대회](https://github.com/mihnhyuk/clug_clone_coding.git)
     
-    ![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/Untitled%202.png)
+    ![Untitled](/%08readme/Untitled%202.png)
     
-    ![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/Untitled%203.png)
+    ![Untitled](/%08readme/Untitled%203.png)
     
     github로 clug_clone_coding이라는 중앙저장소를 만들어 효율적으로 협업을 하였습니다. main 브랜치외에 3개의 브랜치를 더 만들어 각자한 작업을 각자 브랜치에 올려 이상이 없는지 확인 후 dev브랜치(메인 브랜치)에 병합하였습니다. 
     
@@ -207,6 +207,5 @@ api는 최소한의 기능들만 구현했습니다.
     
     시간이 부족하여 원하는 만큼 분리하지는 못한 점이 아쉽습니다.
     
-    ![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/Untitled%204.png)
-    
-    ![Untitled](%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%20%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%209cbdfe1414d7444095141b43cdae28a2/Untitled%205.png)
+    ![Untitled](/%08readme/Untitled%204.png)
+    ![Untitled](/%08readme/Untitled%205.png)
