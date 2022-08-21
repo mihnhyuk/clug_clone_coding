@@ -9,7 +9,7 @@ var getLike = (req, res) => {
 			return;
 		}
 		var ret = JSON.parse(data);
-		var com = ret.data.find(comm => comm["likes"] === req.params.comID);
+		var com = ret.data.find(comm => comm[param.address] === req.params.comID);
 		com["likes"]++ ;
 		console.log(ret);
 		var json = JSON.stringify(ret); //convert it back to json
